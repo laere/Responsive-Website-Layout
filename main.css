@@ -1,0 +1,192 @@
+/*====================================================
+        BASE STYLES
+====================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Luicida Grande', sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+}
+
+a:hover {
+  opacity: .65;
+}
+/*====================================================
+        HEADER/NAV
+====================================================*/
+
+.main-header,
+.nav {
+  text-align: center;
+  text-shadow: 2px 2px 2px #222;
+}
+
+.main-header {
+  min-height: 100px;
+  border-bottom: 15px solid #CE619F;
+}
+
+.nav {
+  display: block;
+  padding-bottom: 10px;
+}
+/*====================================================
+        ROW/COLUMNS
+====================================================*/
+
+.row,
+.col {
+  padding: 10px 0;
+}
+/*====================================================
+        BANNER
+====================================================*/
+
+.banner {
+  background-color: #A41A68;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  border-bottom: 10px solid #840B4F;
+  max-width: 100%;
+}
+
+.name {
+  font-size: 3em;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 5px;
+}
+
+.headline {
+  font-size: 1.5em;
+  text-shadow: 1px 0 1px black;
+}
+
+/*====================================================
+        IMAGES AND BUTTONS
+====================================================*/
+.btn {
+  display: block;
+  margin-top: 30px;
+  padding: 8px 20px;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-family: 'Lucida Grande', sans-serif;
+  background: linear-gradient(to top, #ACA7AA, transparent 95%);
+  border: none;
+  border-bottom: 4px solid #6B6367;
+  border-radius: 5px;  
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .65;
+}
+
+
+
+img {
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+
+/*====================================================
+        FOOTER
+====================================================*/
+
+.main-footer {
+  font-family: 'Lucida Grande', sans-serif;
+  font-size: .8em;
+  margin-top: 60px;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-shadow: 5px 5px 5px black;
+}
+/*====================================================
+        MEDIA QUERIES
+====================================================*/
+
+@media (min-width: 769px) {
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .row {
+    margin: auto;
+    width: 95%
+  }
+}
+
+@media (min-width: 1025px) {
+  li {
+    float: right;
+    padding-right: 40px;
+    position: relative;
+    bottom: 10px;
+  }
+  .logo {
+    float: left;
+    position: relative;
+    bottom: 30px;
+    padding-left: 20px;
+  }
+  .row,
+  .col {
+    height: 100%;
+  }
+  .row {
+    position: relative;
+  }
+  .col {
+    width: 30%;
+    position: absolute;
+    padding: 0 30px;
+  }
+  .primary-content {
+    left: 30%;
+    width: 40%
+  }
+  .secondary-content {
+    right: 0;
+  }
+  .main-footer {
+    position: relative;
+    top: 200px;
+    margin-top: 600px;
+  }
+}
